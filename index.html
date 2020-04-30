@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Equation parser</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="docs/mathquill.css">
+        <link rel="stylesheet" type="text/css" href="docs/style.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="screen-container">
+                <div style="flex: 1; overflow: hidden;">
+                    <canvas id="graph" class="graph"></canvas>
+                </div>
+                <div class="screen-controls">
+                    <img src="docs/parametric.svg" id="parametric-icon" class="icon icon-selected">
+                    <img src="docs/time.svg" id="time-icon" class="icon">
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="resize-bar"></div>
+
+                <div class="ode-wrapper">
+                    <div class="header">
+                        Differential Equations
+                    </div>
+
+                    <div class="ode-rack">
+                    </div>
+
+                    <div class="add-equation-button" title="Add an ODE to the system">
+                        +
+                    </div>
+                </div>
+
+                <div class="parametric-wrapper">
+                    <div class="header">
+                        Parametrics
+                    </div>
+                    <div class="parametric-rack">
+
+                    </div>
+                    <div>
+                        <button id="add-parametric-button">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="docs/main.js"></script>
+    </body>
+</html>
